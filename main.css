@@ -1,0 +1,338 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f2;
+    color: #222725;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100vw;
+}
+
+#home-button {
+    text-decoration: none;
+    color: inherit;
+}
+
+#page-title {
+    text-align: center;
+    height: 50px;
+    background-color: #899878;
+    line-height: 50px;
+    font-size: 35px;
+    position: relative;
+    margin-top: 0;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+#page-title .year-number {
+    display: none;
+}
+
+#page-title .year-text {
+    display: inline;
+}
+
+#page-title:hover .year-number {
+    display: inline;
+}
+
+#page-title:hover .year-text {
+    display: none;
+}
+
+#menu {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+}
+
+#menu li {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e4e6c3;
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    /* Having difficulties pushing navigation bar to the bottom of the My Year In page title */
+}
+
+#menu li a {
+    /* To make the anchor tags inside the li elements expand to fit the size of the li item and make a clickable "button" */
+    display: block;
+    width: 100%; /* Fits 100% width of li element it's inside */
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    /* Above code doesn't work with flex children? a tag is not expanding to fill li element */
+}
+
+main {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#intro {
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+    padding: 15px;
+}
+
+#onward {
+    text-align: center;
+    font-size: 25px;
+    /* border: 1px solid black; */
+    padding: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+}
+
+footer p {
+    text-align: center;
+    background-color: #222725;
+    color: #f7f7f2;
+    /* position: absolute; */
+    /* margin: 0 auto; */
+    padding: 15px;
+    width: 100vw;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+/* Here is the beginning of the CSS for the Movies page. */
+
+#master-list {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.item-title {
+    font-weight: 800;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.number {
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 30px;
+    font-family: 'Abril Fatface', cursive;
+    box-shadow: 0px 1px 5px #899878;
+    display: inline;
+    background-color: #e4e6c3;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.list-item {
+    margin-bottom: 30px;
+}
+
+.cover-art {
+    width: 30vw;
+    height: 30vw;
+    background-color: #899878;
+    border-top: 2px solid #899878;
+    border-bottom: 2px solid #899878;
+    background-size: cover;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(137, 152, 120, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay p {
+    display: none;
+}
+
+.overlay:hover {
+    /* width: 100%;
+    height: 100%;
+    background-color: rgba(137, 152, 120, .5); */
+    animation-name: transparency;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+.overlay:hover p {
+    display: inline;
+    padding: 40px;
+    font-weight: 500;
+    animation-name: showtext;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transparency {
+    100% {
+        background-color: rgba(137, 152, 120, .75);
+    }
+}
+
+@keyframes showtext {
+    100% {
+        color: white;
+    }
+}
+
+/* CSS for the TV Shows page */
+.community {
+    background-image: url(http://c0.thejournal.ie/media/2014/05/community-tv-show-752x501.jpg);
+    background-position: center;
+}
+
+.goodplace {
+    background-image: url(https://www.tvinsider.com/wp-content/uploads/2018/08/THE_GOOD_PLACE_9119-1014x570.jpg);
+    background-position: center;
+}
+
+.murder {
+    background-image: url(https://ewedit.files.wordpress.com/2015/11/htgawm-paley.jpg?w=800);
+    background-position: center;
+}
+
+.thisisus {
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/this-is-us-season-3-cast-1534788955.jpg);
+    background-position: center;
+}
+
+.unreal {
+    background-image: url(https://imgix.bustle.com/rehost/2016/9/13/ff37337a-e281-44d0-8b1c-563d350031f8.jpg);
+    background-position: center;
+}
+
+.newgirl {
+    background-image: url(https://imagesvc.timeincapp.com/v3/fan/image?url=https://netflixlife.com/wp-content/blogs.dir/340/files/2018/04/New-Girl.jpg&c=sc&w=850&h=560);
+    background-position: center;
+}
+
+.onceupon {
+    background-image: url(http://images6.fanpop.com/image/photos/39700000/Once-Upon-A-Time-Cast-Comic-Con-2016-once-upon-a-time-39790115-612-559.jpg);
+    background-position: center;
+}
+
+.gracefrankie {
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s---38hcNff--/c_scale,f_auto,fl_progressive,q_80,w_800/z52oqf2nga4ekhnqodcx.jpg);
+    background-position: center;
+}
+
+.riverdale {
+    background-image: url(https://i.pinimg.com/originals/39/4a/61/394a614be60a4ce092653d2e5bb6fe46.jpg);
+    background-position: center;
+}
+
+.britishbaking {
+    background-image: url(https://www.realityblurred.com/realitytv/images/2015/11/great-british-baking-show-pbs-season-two.jpg);
+    background-position: center;
+}
+/* End of TV Shows page */
+
+/* CSS for the Movies page */
+.deadpool {
+    background-image: url(https://a.ltrbxd.com/resized/sm/upload/m5/47/vf/x3/deadpool-2-1200-1200-675-675-crop-000000.jpg?k=d14cafece5);
+    background-position: center;
+}
+
+.incredibles {
+    background-image: url(https://consequenceofsound.files.wordpress.com/2018/04/the-incredibles-2.png?w=807);
+    background-position: center;
+}
+
+.crazyrich {
+    background-image: url(https://static01.nyt.com/images/2018/08/12/arts/12CRAZY-RICH-ASIANS-CASTING/merlin_142046139_9934f129-0538-4721-8b67-6111c51568d1-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
+    background-position: center;
+}
+
+.room {
+    background-image: url(https://www.indiewire.com/wp-content/uploads/2015/11/room-cast-writer-director.jpg?w=780);
+    background-position: center;
+}
+
+.allboys {
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/israel-broussard-janel-parrish-lana-condor-anna-cathcart-news-photo-1017879380-1534783366.jpg?resize=480:*);
+    background-position: center;
+}
+
+.spiderman {
+    background-image: url(https://cdn3-www.comingsoon.net/assets/uploads/2018/07/spider-verse1.jpg);
+    background-position: center;
+}
+
+.oceans8 {
+    background-image: url(https://media.vanityfair.com/photos/5b0484e5016c7568e478ca98/master/w_768,c_limit/Oceans-8-MET-Photocall.jpg);
+    background-position: center;
+}
+
+.halloween {
+    background-image: url(https://horrorfreaknews.com/wp-content/uploads/2017/12/h2018-1024x576-1-1024x576.jpg);
+    background-position: center;
+}
+
+.ifeelpretty {
+    background-image: url(https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/8/6f/86fb757e-092d-5ac5-8070-4d4ab92e8745/5ad77ebed1870.image.jpg?resize=1200%2C800);
+    background-position: center;
+}
+
+.nappily {
+    background-image: url(https://occ-0-92-1722.1.nflxso.net/art/ff142/ccb80b2c9a62319bb403f7a986fd5a2869dff142.jpg);
+    background-position: center;
+}
+/* End of Movies page */
+
+/* CSS for Books page */
+.curatedcloset {
+    background-image: url(https://static1.squarespace.com/static/543bfc2ce4b018d3e89a06e0/t/581b4bedb8a79b6589e18929/1478184050674/The+Curated+Closet%3A+A+simple+system+for+discovering+your+personal+style+and+building+your+dream+wardrobe);
+    background-position: center;
+}
+
+.strategy {
+    background-image: url(https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781600617997/the-strategic-designer-9781600617997_hr.jpg);
+    background-position: center;
+}
+
+.breakup {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51ZzCmz3WtL._SX331_BO1,204,203,200_.jpg);
+    background-position: center;
+}
+
+.drawing365 {
+    background-image: url(http://ecx.images-amazon.com/images/I/61-WXtN072L.jpg);
+    background-position: center;
+}
+
+.strong {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/91CUq2mi%2BDL.jpg);
+    background-position: center;
+}
+
+.gtd {
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81Sna4a0jPL.jpg);
+    background-position: center;
+}

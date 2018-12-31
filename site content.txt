@@ -1,0 +1,35 @@
+My Year in... <b>Movies</b> TV Shows Books
+
+Movies
+- Spider-Man: Into the Spider-Verse
+- To All the Boys I've Loved Before
+- Nappily Ever After
+- Room
+- Bohemian Rhapsody
+- Deadpool 2
+- Crazy Rich Asians
+- Halloween
+- Incredibles 2
+- Ocean's 8
+
+TV Shows
+- Great British Baking Show
+- Community (reruns on Hulu)
+- The Good Place
+- How to Get Away with Murder
+- This is Us
+- UnREAL
+- New Girl
+- Once Upon a Time
+- Grace & Frankie
+- Riverdale
+
+Books
+- Getting Things Done (again) 6
+- The Curated Closet 1
+- Strong (in progress) 5
+- The Strategic Designer 2
+- Drawing 365 4
+- Getting Past Your Breakup 3
+
+Brings up a box to the right when you hover over the movie title
